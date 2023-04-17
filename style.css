@@ -138,11 +138,7 @@ body {
   }
 
 
-  #menu {
+  .menu {
     display: none;
-  }
-  
-  #menu.active {
-    display: block;
   }
   
