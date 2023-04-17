@@ -1,5 +1,8 @@
  nav {
     text-align: right;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
   }
   
   nav ul {
@@ -7,6 +10,7 @@
     display: inline-block;
     margin: 0;
     padding: 0;
+    
   }
 
   nav li {
@@ -22,6 +26,7 @@
 
   .logo_menu {
     float: left;
+    width: 160px;
   }
 
   nav li button {
@@ -33,10 +38,37 @@
     font-size: 16px;
     padding: 25px 40px;
     margin-right: 45px;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
   }
 
   nav img {
     max-width: 100%;
     height: auto;
   }
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Cocogoose', sans-serif;
+
+  }
+
+  .content {
+    flex: 1;
+  }
+  
+  .image {
+    margin-left: 20px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+  }
+  
   
