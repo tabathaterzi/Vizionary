@@ -2,7 +2,7 @@
     text-align: right;
     font-family: 'Cocogoose', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 12px;
   }
   
   nav ul {
@@ -19,14 +19,14 @@
 
   nav a {
     display: inline-block;
-    padding: 45px;
+    padding: 50px 60px 0px 60px;
     text-decoration: none;
     color: #333;
   }
 
   .logo_menu {
     float: left;
-    width: 160px;
+    width: 120px;
   }
 
   nav li button {
@@ -35,12 +35,11 @@
   /*  border-radius: 3px; */
     color: #fff;
     cursor: pointer;
-    font-size: 16px;
     padding: 25px 40px;
     margin-right: 45px;
     font-family: 'Cocogoose', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   nav img {
@@ -53,22 +52,58 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Cocogoose', sans-serif;
+    position: absolute;
+    padding: 0px 65px 0px 65px;
+    left: 0;
+    right: 0;
+}
 
-  }
 
   .content {
     flex: 1;
   }
   
-  .image {
-    margin-left: 20px;
-  }
-  
+
   .image img {
-    max-width: 100%;
+    width: 450px;
     height: auto;
     float: right;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+  .button_1 {
+    background-color: black;
+    border: none;
+  /*  border-radius: 3px; */
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 25px 40px;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
   }
   
+  .button_2 {
+    border-color: black;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 25px 40px;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
+  }
   
+  .container {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  .titre {
+    margin-top: -15px;
+  }
