@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>Vizionary</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
   </head>
 
   <body>
@@ -15,14 +14,50 @@
         <li><button>Login</button></li>
       </ul>
     </nav>
+
+
+    <br>
+    
+    <header>
+      <div class="titre">
+         <h1>Bonjour Nom de l’entreprise !</h1>
+      </div>
+      <div class="paragraphe">
+         <p>Réaliser votre visuel simplement ! <br>
+      Grâce à nos modèles, vous pouvez les modifier, les télécharger et les publier sur vos réseaux. </p>
+    </div>
+    </header>
+   
+   
+      <br>
+    <br>
+
+    <div class="wrapper">
+      <ul class="menu2">
+        <li><button class="menu_logo"><img src="./img/V..svg" alt="logo" width="18px"></button></li>
+        <li><button class="menu-btn active" data-target="box-1"><img src="./img/icône format.svg" alt="logo" width="18px">Format</button></li>
+        <li><button class="menu-btn" data-target="box-2"><img src="./img/icône format.svg" alt="logo" width="18px">Modèle</button></li>
+        <li><button class="menu-btn" data-target="box-3"><img src="./img/icône format.svg" alt="logo" width="18px">Couleurs</button></li>
+        <li><button class="menu-btn" data-target="box-4"><img src="./img/icône format.svg" alt="logo" width="18px">Police</button></li>
+        <li><button class="menu-btn" data-target="box-5"><img src="./img/icône format.svg" alt="logo" width="18px">Image</button></li>
+        <li><button class="menu-btn" data-target="box-6"><img src="./img/icône format.svg" alt="logo" width="18px">Exporter</button></li>
+      </ul>
+
+      <div class="box-container">
+        <div class="box active" id="box-1">Découvrez nos formats !</div>
+        <div class="box" id="box-2">Découvrez nos modèles !</div>
+        <div class="box" id="box-3">Choissisez les couleurs de votre marque !</div>
+        <div class="box" id="box-4">Choissisez votre police !</div>
+        <div class="box" id="box-5">Explorer nos images !</div>
+        <div class="box" id="box-6">Vous avez fini ?</div>
+      </div>
+      
+      <div class="box-container_2">
+        <div class="box active_1" id="box_générateur">visualisation modèle</div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
   </body>
   
-
-  <button id="toggle-menu">Cliquez pour afficher / masquer le menu</button>
-  <ul id="menu">
-    <li>Menu item 1</li>
-    <li>Menu item 2</li>
-    <li>Menu item 3</li>
-  </ul>
-      
-    </html>
+</html>

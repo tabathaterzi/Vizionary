@@ -1,63 +1,64 @@
- nav {
-    text-align: right;
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-  }
+nav {
+  text-align: right;
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
   
-  nav ul {
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    
-  }
+}
 
-  nav li {
-    display: inline-block;
-  }
+nav li {
+  display: inline-block;
+}
 
-  nav a {
-    padding: 25px 40px;
-    margin-right: -4px;
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    text-decoration: none;
-    color: #000;
+nav a {
+  padding: 25px 40px;
+  margin-right: -4px;
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
 }
 
 nav a.menu:hover {
-    background-color: red;
-    color: #fff;
+  background-color: red;
+  color: #fff;
 }
 
-  .logo_menu {
-    float: left;
-    width: 120px;
-  }
+.logo_menu {
+  float: left;
+  width: 120px;
+}
 
-  nav li button {
-    background-color: black;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    padding: 25px 40px;
-    margin-right: 45px;
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-  }
+nav li button {
+  background-color: black;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 25px 40px;
+  margin-right: 45px;
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
 
-  nav li button:hover {
-    background-color: red;
-    color: #fff;
-  }
+nav li button:hover {
+  background-color: red;
+  color: #fff;
+}
 
-  nav img {
-    max-width: 100%;
-    height: auto;
-  }
+nav img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
   .container {
@@ -136,9 +137,3 @@ body {
   .img {
     margin: 50px 0px 0px 0px;
   }
-
-
-  .menu {
-    display: none;
-  }
-  

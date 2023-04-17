@@ -1,0 +1,160 @@
+nav {
+    text-align: right;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    padding: 25px 40px;
+    margin-right: -4px;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a.menu:hover {
+    background-color: red;
+    color: #fff;
+}
+
+  .logo_menu {
+    float: left;
+    width: 120px;
+  }
+
+  nav li button {
+    background-color: black;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 25px 40px;
+    margin-right: 45px;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  nav li button:hover {
+    background-color: red;
+    color: #fff;
+  }
+
+  nav img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+  
+
+
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+  }
+  
+  .menu2 {
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: -8px;
+  }
+  
+  .menu2 li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .menu-btn {
+    padding-top: 7px;
+    border: none;
+    background-color: rgb(199, 249, 154);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: -11px;
+    font-family: 'Cocogoose Light', sans-serif;
+    font-size: 8px;
+    line-height: 11px;
+    border: 1px solid black;
+  }
+  
+  .menu-btn.active {
+    background-color: #e0e0e0;
+    width: 50px;
+    height: 50px;
+    font-family: 'Cocogoose Light', sans-serif;
+    font-size: 8px;
+    line-height: 11px;
+
+  }
+  
+  .box-container {
+    flex-grow: 1;
+  }
+  
+  .box {
+    display: none;
+    padding: 25px;
+    background-color: #EBE9E9;
+    width: 325px;
+    height: 292px;
+    margin-left: -21px;
+    margin-top: -8px;
+    border: 1px solid black;
+  }
+  
+  .box.active {
+    display: block;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 12px;
+  }
+  
+  .menu_logo {
+    background-color: #e0e0e0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+  }
+
+  .titre {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .paragraphe {
+    font-family: 'Cocogoose Light', sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .box.active_1 {
+    display: block;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 12px;
+    width: 540px;
+  }
+
+
