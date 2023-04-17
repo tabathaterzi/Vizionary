@@ -77,7 +77,6 @@ nav a.menu:hover {
     padding-left: 120px;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
     margin-top: -8px;
   }
   
@@ -120,7 +119,7 @@ nav a.menu:hover {
     background-color: #EBE9E9;
     width: 325px;
     height: 292px;
-    margin-left: -21px;
+    margin-left: -1px;
     margin-top: -8px;
     border: 1px solid black;
   }
