@@ -119,6 +119,7 @@ body {
 
   .button_2:hover {
     background-color: red;
+    border-color: red;
     color: #fff;
   }
 
