@@ -153,7 +153,7 @@ nav a.menu:hover {
     display: block;
     font-family: 'Cocogoose', sans-serif;
     font-size: 12px;
-    width: 580px;
+    width: 520px;
   }
 
   input[type="color"] {
@@ -165,3 +165,33 @@ nav a.menu:hover {
   }
   
 
+
+
+
+  .format {
+    width: 150px;
+    height: 84px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .format:hover {
+    background-color: lightgray;
+  }
+  
+  .visualisation {
+    width: 400px;
+    height: 225px;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .format-choisi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

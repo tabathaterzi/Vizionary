@@ -22,18 +22,36 @@ buttons.forEach((button) => {
 });
 
 
-const colorPicker = document.querySelector('#color-picker');
-const colorBoxes = document.querySelectorAll('.color-box');
-
-colorPicker.addEventListener('input', () => {
-  const selectedColor = colorPicker.value;
-
-  // Afficher les boîtes de couleur correspondantes
-  colorBoxes.forEach(box => {
-    if (box.dataset.color === selectedColor) {
-      box.style.display = 'block';
-    } else {
-      box.style.display = 'none';
-    }
+/*
+  const visualisationDiv = document.getElementById('visualisation');
+  const formatBtns = document.querySelectorAll('.format-btn');
+  
+  formatBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      visualisationDiv.innerHTML = `<img src="./img/Format 16_9.svg" alt="visualisation_format ${btn.dataset.format}" width="100%">`;
+    });
   });
-});
+
+*/
+
+
+
+
+  const exportBtn = document.querySelector('.export-btn');
+  exportBtn.addEventListener('click', () => {
+    // exporter l'image ici
+  });
+
+
+
+  const formats = document.querySelectorAll('.format');
+  const formatChoisi = document.querySelector('.format-choisi');
+  
+  formats.forEach(format => {
+    format.addEventListener('click', () => {
+      const width = format.getAttribute('data-width');
+      const height = format.getAttribute('data-height');
+      formatChoisi.textContent = `${width}:${height}`;
+    });
+  });
+  
