@@ -20,3 +20,20 @@ buttons.forEach((button) => {
     });
   });
 });
+
+
+const colorPicker = document.querySelector('#color-picker');
+const colorBoxes = document.querySelectorAll('.color-box');
+
+colorPicker.addEventListener('input', () => {
+  const selectedColor = colorPicker.value;
+
+  // Afficher les boîtes de couleur correspondantes
+  colorBoxes.forEach(box => {
+    if (box.dataset.color === selectedColor) {
+      box.style.display = 'block';
+    } else {
+      box.style.display = 'none';
+    }
+  });
+});

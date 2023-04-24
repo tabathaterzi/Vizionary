@@ -156,4 +156,12 @@ nav a.menu:hover {
     width: 580px;
   }
 
+  input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
 
