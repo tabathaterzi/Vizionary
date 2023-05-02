@@ -68,3 +68,14 @@ boutonsFormats.forEach(boutonFormat => {
 
 
 
+
+const colorPicker = document.querySelector('.color-picker');
+const colorInput = colorPicker.querySelector('#color');
+const colorOptions = colorPicker.querySelector('#color-options');
+
+colorOptions.addEventListener('change', () => {
+  colorInput.value = colorOptions.value;
+});
+
+
+
