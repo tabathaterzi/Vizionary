@@ -195,3 +195,32 @@ nav a.menu:hover {
     transform: translate(-50%, -50%);
   }
   
+
+
+  .color-1 {
+    background-color: #FFC107;
+  }
+  
+  .color-2 {
+    background-color: #9C27B0;
+  }
+  
+  .color-3 {
+    background-color: #03A9F4;
+  }
+  
+  .color-4 {
+    background-color: #8BC34A;
+  }
+
+  .button {
+    background-color: #2735b0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: #2735b0;
+  }
