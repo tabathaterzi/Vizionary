@@ -48,9 +48,9 @@
             <img src="./img/Format 16_9.svg" alt="" width="100%">
             <h4>16:9</h4>
           </div>
-          <div class="format" id="format2" data-width="4" data-height="3">
-            <img src="./img/Format 4_3.svg" alt="" width="100%">
-            <h4>4:3</h4>
+          <div class="format" id="format2" data-width="1080" data-height="1080">
+            <img src="./img/Format 1080_1080.svg" alt="" width="100%">
+            <h4>1080:1080</h4>
           </div>
         </div>        
         </div>
@@ -58,9 +58,12 @@
 
         <div class="box" id="modèles">Découvrez nos modèles !</div>
         <div class="box" id="couleurs">Choisissez les couleurs de votre marque !
-          <div class="color-picker">
-            <input type="color" id="color" name="color" value="#000000">
+          <div class="color-picker-container">
+            <input type="color" id="color-picker">
+            <button id="add-color-btn">Ajouter</button>
+            <ul id="color-list"></ul>
           </div>
+          
           
         </div>
         <div class="box" id="police">Choisissez votre police !</div>

@@ -162,12 +162,9 @@ nav a.menu:hover {
 
 
   .format {
-    width: 150px;
-    height: 100px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    width: 136px;
+    height: 105px;;
+    margin-bottom: 15px;
     position: relative;
   }
   
@@ -178,8 +175,6 @@ nav a.menu:hover {
     bottom: -2px;
     left: -2px;
     right: -2px;
-    border: 2px solid #000;
-    border-radius: 5px;
   }
   
   .format img {
@@ -194,10 +189,28 @@ nav a.menu:hover {
     font-size: 14px;
   }
 
-  .color-picker {
+  .color-picker-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #color-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .color-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    width: 80px;
+    margin: 5px 5px;
+    width: 40px;
+    height: 40px;
   }
+  
+  .color-item span {
+    font-size: 4px;
+  }
+  

@@ -69,13 +69,17 @@ boutonsFormats.forEach(boutonFormat => {
 
 
 
-const colorPicker = document.querySelector('.color-picker');
-const colorInput = colorPicker.querySelector('#color');
-const colorOptions = colorPicker.querySelector('#color-options');
+const colorPicker = document.getElementById('color-picker');
+const addColorBtn = document.getElementById('add-color-btn');
+const colorList = document.getElementById('color-list');
 
-colorOptions.addEventListener('change', () => {
-  colorInput.value = colorOptions.value;
+addColorBtn.addEventListener('click', () => {
+  const color = colorPicker.value;
+  const li = document.createElement('li');
+  const span = document.createElement('span');
+  span.textContent = color;
+  li.appendChild(span);
+  li.style.backgroundColor = color;
+  li.classList.add('color-item');
+  colorList.appendChild(li);
 });
-
-
-
