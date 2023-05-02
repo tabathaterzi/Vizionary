@@ -194,10 +194,6 @@ nav a.menu:hover {
     font-size: 14px;
   }
 
-  
-
-  
-
   .color-picker {
     display: flex;
     align-items: center;
@@ -205,4 +201,3 @@ nav a.menu:hover {
     height: 100px;
     width: 80px;
   }
-  
