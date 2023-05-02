@@ -50,6 +50,7 @@ const formatChoisi = document.querySelector('.box-container_2 .format-choisi');
 // Récupère tous les boutons de format
 const boutonsFormats = document.querySelectorAll('#formats .format');
 
+
 // Parcours tous les boutons de format
 boutonsFormats.forEach(boutonFormat => {
   // Ecoute l'événement de clic sur chaque bouton de format
@@ -60,11 +61,14 @@ boutonsFormats.forEach(boutonFormat => {
 
     // Met à jour le contenu de la div format-choisi avec le format sélectionné
     formatChoisi.innerHTML = `
-      <img src="./img/Format ${width}_${height}.svg" alt="" width="100%">
-      <h4>${width}:${height}</h4>
+    <img class="small ${width === '16' && height === '9' ? 'landscape' : 'portrait'}" src="./img/Format ${width}_${height}.svg" alt="" width="100%">
     `;
   });
-});
+})
+
+
+
+
 
 
 

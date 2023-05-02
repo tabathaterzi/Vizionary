@@ -130,6 +130,7 @@ nav a.menu:hover {
     font-size: 12px;
   }
   
+
   .menu_logo {
     background-color: #e0e0e0;
     width: 50px;
@@ -157,17 +158,27 @@ nav a.menu:hover {
     margin-left: 544px;
   }
 
-
-
-
+  img.small.portrait {
+   scale: 0.55;
+   transform: translateY(-40%);
+  }
 
   .format {
     width: 136px;
-    height: 105px;;
-    margin-bottom: 15px;
     position: relative;
   }
-  
+
+
+  .format-choisi {
+    width: 520px;
+    height: 289px;
+  }
+
+
+  img.small.portrait {
+    display: block;
+   }
+
   .format:hover::before {
     content: "";
     position: absolute;
@@ -179,15 +190,29 @@ nav a.menu:hover {
   
   .format img {
     max-width: 100%;
+    margin-top: 15px;
   }
   
-  .format h4 {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    margin: 0;
-    font-size: 14px;
+  h3{
+    margin-top: -0.5px;
   }
+
+  .typo1 {
+    position: absolute;
+    font-family: 'Cocogoose Pro italic', Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-top: -50px;
+  }
+
+  .typo2 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 35px;
+    margin-top: -75px;
+  }
+
 
   .color-picker-container {
     display: flex;
