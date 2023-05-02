@@ -44,14 +44,23 @@ buttons.forEach((button) => {
 
 
 
-  const formats = document.querySelectorAll('.format');
-  const formatChoisi = document.querySelector('.format-choisi');
-  
-  formats.forEach(format => {
-    format.addEventListener('click', () => {
-      const width = format.getAttribute('data-width');
-      const height = format.getAttribute('data-height');
-      formatChoisi.textContent = `${width}:${height}`;
-    });
+// sélectionne tous les éléments de format
+const formats = document.querySelectorAll('.format');
+
+// écoute les clics sur chaque élément de format
+formats.forEach(format => {
+  format.addEventListener('click', () => {
+    // enregistre le format sélectionné dans une variable
+    const width = format.getAttribute('data-width');
+    const height = format.getAttribute('data-height');
+    const formatSelectionne = `${width}:${height}`;
+
+    // affiche le format sélectionné dans la visualisation
+    const formatChoisi = document.querySelector('.format-choisi');
+    formatChoisi.style.width = `${width*50}px`;
+    formatChoisi.style.height = `${height*50}px`;
+    formatChoisi.innerHTML = formatSelectionne;
   });
-  
+});
+
+
