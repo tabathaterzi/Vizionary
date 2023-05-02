@@ -87,3 +87,5 @@ addColorBtn.addEventListener('click', () => {
   li.classList.add('color-item');
   colorList.appendChild(li);
 });
+
+
