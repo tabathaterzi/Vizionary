@@ -154,6 +154,7 @@ nav a.menu:hover {
     font-family: 'Cocogoose', sans-serif;
     font-size: 12px;
     width: 520px;
+    margin-left: 544px;
   }
 
   input[type="color"] {
@@ -170,30 +171,39 @@ nav a.menu:hover {
 
   .format {
     width: 150px;
-    height: 84px;
-    border: 1px solid black;
-    display: inline-block;
-    margin-right: 10px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .format:hover {
-    background-color: lightgray;
-  }
-  
-  .visualisation {
-    width: 400px;
-    height: 225px;
-    border: 1px solid black;
+    margin-bottom: 10px;
     position: relative;
   }
   
-  .format-choisi {
+  .format:hover::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border: 2px solid #000;
+    border-radius: 5px;
   }
+  
+  .format img {
+    max-width: 100%;
+  }
+  
+  .format h4 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  
+
   
 
   .color-1 {
