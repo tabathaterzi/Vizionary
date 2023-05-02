@@ -44,23 +44,27 @@ buttons.forEach((button) => {
 
 
 
-// sélectionne tous les éléments de format
-const formats = document.querySelectorAll('.format');
+// Récupère la div format-choisi de la box container 2
+const formatChoisi = document.querySelector('.box-container_2 .format-choisi');
 
-// écoute les clics sur chaque élément de format
-formats.forEach(format => {
-  format.addEventListener('click', () => {
-    // enregistre le format sélectionné dans une variable
-    const width = format.getAttribute('data-width');
-    const height = format.getAttribute('data-height');
-    const formatSelectionne = `${width}:${height}`;
+// Récupère tous les boutons de format
+const boutonsFormats = document.querySelectorAll('#formats .format');
 
-    // affiche le format sélectionné dans la visualisation
-    const formatChoisi = document.querySelector('.format-choisi');
-    formatChoisi.style.width = `${width*50}px`;
-    formatChoisi.style.height = `${height*50}px`;
-    formatChoisi.innerHTML = formatSelectionne;
+// Parcours tous les boutons de format
+boutonsFormats.forEach(boutonFormat => {
+  // Ecoute l'événement de clic sur chaque bouton de format
+  boutonFormat.addEventListener('click', () => {
+    // Récupère la largeur et la hauteur du format sélectionné
+    const width = boutonFormat.dataset.width;
+    const height = boutonFormat.dataset.height;
+
+    // Met à jour le contenu de la div format-choisi avec le format sélectionné
+    formatChoisi.innerHTML = `
+      <img src="./img/Format ${width}_${height}.svg" alt="" width="100%">
+      <h4>${width}:${height}</h4>
+    `;
   });
 });
+
 
 
