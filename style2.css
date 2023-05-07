@@ -165,7 +165,7 @@ nav a.menu:hover {
   }
 
   .format {
-    width: 136px;
+    width: 155px;
     position: relative;
   }
 
@@ -191,7 +191,7 @@ nav a.menu:hover {
   
   .format img {
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 7px;
   }
   
   h3{
@@ -200,7 +200,7 @@ nav a.menu:hover {
 
   .typo1 {
     position: absolute;
-    font-family: 'Cocogoose Pro italic', Helvetica, sans-serif;
+    font-family: 'Cocogoose Pro UltraLight Italic' , sans-serif;
     font-size: 12px;
     margin-left: 50px;
     margin-top: -50px;
@@ -208,7 +208,7 @@ nav a.menu:hover {
 
   .typo2 {
     position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cocogoose Pro UltraLight Italic', sans-serif;
     font-size: 12px;
     margin-left: 35px;
     margin-top: -75px;
