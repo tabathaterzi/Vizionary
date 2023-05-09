@@ -17,6 +17,10 @@ nav li {
   display: inline-block;
 }
 
+
+p {
+  font-family: 'Cocogoose Light', sans-serif;
+}
 nav a {
   padding: 25px 40px;
   margin-right: -4px;
