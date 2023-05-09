@@ -279,3 +279,8 @@ nav a.menu:hover {
   width: 80%;
   max-width: 700px;
 }
+
+
+p {
+  font-family: 'Cocogoose Light', sans-serif;
+}
