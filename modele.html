@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Vizionary</title>
     <link rel="stylesheet" href="./style2.css">
@@ -7,138 +8,141 @@
 
   <body>
     <nav>
-      <a href="index.html" class="logo_menu"><img src="./img/Logo.svg" alt="logo"></a>
+      <a href="index.html" class="logo_menu"><img src="./img/Vizionary. (1).svg" alt="logo"></a>
       <ul>
-        <li><a href="index.html" class="menu">Accueil</a></li>
-        <li><a href="modele.html" class="menu">Modèle</a></li>
+        <li><a href="modele.html" class="menu-modèle">Modèl</a></li>
         <li><button>Login</button></li>
       </ul>
     </nav>
 
-    <br>
-    
-    <header>
-      <div class="titre">
-         <h1>Bonjour Nom de l’entreprise !</h1>
-      </div>
-      <div class="paragraphe">
-         <p>Réaliser votre visuel simplement ! <br>
-      Grâce à nos modèles, vous pouvez les modifier, les télécharger et les publier sur vos réseaux. </p>
-      </div>
-    </header>
-   
-    <br>
-    <br>
 
     <div class="wrapper">
-      <ul class="menu2">
-        <li><button class="menu_logo"><img src="./img/V..svg" alt="logo" width="18px"></button></li>
-        <li><button class="menu-btn active" data-target="formats"><img src="./img/icône format.svg" alt="logo" width="18px">Format</button></li>
-        <li><button class="menu-btn" data-target="modèles"><img src="./img/icône format.svg" alt="logo" width="18px">Modèle</button></li>
-        <li><button class="menu-btn" data-target="couleurs"><img src="./img/icône format.svg" alt="logo" width="18px">Couleurs</button></li>
-        <li><button class="menu-btn" data-target="police"><img src="./img/icône format.svg" alt="logo" width="18px">Police</button></li>
-        <li><button class="menu-btn" data-target="image"><img src="./img/icône format.svg" alt="logo" width="18px">Image</button></li>
-        <li><button class="menu-btn" data-target="exporter"><img src="./img/icône format.svg" alt="logo" width="18px">Exporter</button></li>
-      </ul>
-      
-      
-      <div class="box-container">
-        <div class="box active" id="formats">
-          <h3>Découvrez nos formats !</h3>
-          <div class="format" id="format1" data-width="16" data-height="9">
-            <img src="./img/Format 16_9.svg" alt="" width="100%">
-            <h4 class="typo1">1280 x 720</h4>
-          </div>
-          <div class="format" id="format2" data-width="1080" data-height="1080">
-            <img src="./img/Format 1080_1080.svg" alt="" width="100%">
-            <h4 class="typo2">1080 x 1080</h4>
-          </div>
-        </div>        
-        </div>
-        
+        <ul class="menu2">
+          <li><button class="menu-btn active" data-target="intro"><img src="./img/V..svg" alt="logo" width="28px"></button></li>
+          <li><button class="menu-btn" data-target="formats"><img src="./img/rectangle.svg" alt="logo" width="28px">Format</button></li>
+          <li><button class="menu-btn" data-target="modèles"><img src="./img/layout-left.svg" alt="logo" width="28px">Modèles</button></li>
+          <li><button class="menu-btn" data-target="couleurs"><img src="./img/circle.svg" alt="logo" width="28px">Couleurs</button></li>
+          <li><button class="menu-btn" data-target="police"><img src="./img/type.svg" alt="logo" width="28px">Police</button></li>
+          <li><button class="menu-btn" data-target="image"><img src="./img/image.svg" alt="logo" width="28px">Image</button></li>
+          <li><button class="menu-btn1" data-target="space"></button></li>
+
+        </ul>
+
+
         <div class="box-container">
-        <div class="box" id="modèles">
-          <h3>Découvrez nos modèles</h3>
-          <p>Nos modèles 1080 x 1080</p>
-          <div class="box-modèles">
-          <div class="modèle" id="modèle1" data-width="16" data-height="9">
-            <img src="./img/Visuel 1.svg" alt="" width="100%">
-          </div>
 
-          <div class="modèle" id="modèle2" data-width="16" data-height="9">
-            <img src="./img/Visuel 2.svg" alt="" width="100%">
-          </div>
+<!-- INTRODUCTION -->
 
-          <div class="modèle" id="modèle3" data-width="16" data-height="9">
-            <img src="./img/Visuel 3.svg" alt="" width="100%">
-          </div>
-        </div>
-          <div class="box-modèles1">
+            <div class="box active" id="intro">
+                <div class="info_intro">
+                <h3 class="intro_box">
+                Bonjour Nom de l’entreprise !
+                </h3>
+                <p class="text_intro">Réaliser votre visuel simplement ! 
+                <br><br>
+                Grâce à nos modèles, vous pouvez les modifier, les télécharger et les publier sur vos réseaux. </p>
+                </div>
+            </div> 
+            
+<!-- FORMATS -->
 
-          <div class="modèle" id="modèle1" data-width="1080" data-height="1080">
-            <img src="./img/Modèle 1.svg" alt="" width="100%">
-          </div>
+            <div class="box" id="formats">
+                <div class="info_formats">
+                    <h3 class="titre_formats">Découvrez notre format !</h3>
+                    <div class="format" id="format1" data-width="800" data-height="9">
+                        <br>
+                        <img src="./img/Format 1080_1080.svg" alt="" width="56.5%">
+                        <h4 class="typo1">1080 x 1080</h4>
 
-          <div class="modèle" id="modèle2" data-width="1080" data-height="1080">
-            <img src="./img/Modèle 2.svg" alt="" width="100%">
-          </div>
-
-          <div class="modèle" id="modèle3" data-width="1080" data-height="1080">
-            <img src="./img/Modèle 3.svg" alt="" width="100%">
-          </div>
-        </div>
-</div>
-</div>
-
-
-
-
-
-        <div class="box" id="couleurs">Choisissez les couleurs de votre marque !
-          <div class="color-picker-container">
-            <input type="color" id="color-picker">
-            <button id="add-color-btn">Ajouter</button>
-            <ul id="color-list"></ul>
-          </div>
-          
-          
-        </div>
-        <div class="box" id="police">Choisissez votre police !</div>
-        <div class="box" id="image">Explorer nos images !</div>
-
-
-        <div class="box" id="exporter">Vous avez fini ?
-
-          <div class="" id="exporter">
-            <p>Vous avez terminé de personnaliser votre visuel!Maintenant vous pouvez l'exporter pour l'utiliser sur vos réseaux sociaux ou sur votre site web. Cliquez sur le bouton ci-dessous pour l'exporter en tant qu'image.</p>
-            <button class="export-btn">Exporter</button>
-
-          </div>
-          
-        </div>
-
-        <div class="box-container_2">  
-          <div class="box active_1" id="box_générateur">
-              <div class="visualisation1" id="visualisation-container">
-                <div class="modèle-choisi"></div>
-                <div class="format-choisi"></div>
-    
-              </div>
-              </div>
+                      </div>
+                </div>
             </div>
-    
-      </div>
-      
-      </div>
+
+
+<!-- MODELES -->
+
+            <div class="box" id="modèles">
+                <div class="info_modèles">
+                    <h3 class="titre_modèles">Découvrez nos modèles !</h3>
+                    <div class="modèles" id="modèle1" onclick="showModel('modèle1')">
+                        <!-- Contenido del modelo -->
+                        <img src="./img/Visuel 1 _ 1080-1080.svg" alt="Modelo SVG" class="modèle-img" width="56.5%">
+                      </div>
+                      
+                      <div class="modèle" id="modèle2" onclick="showModel('modèle2')">
+                        <!-- Contenido del modelo -->
+                        <img src="./img/Visuel 3 _ 1080-1080.svg" alt="Modelo SVG" class="modèle-img" width="56.5%">
+                      </div>
+                      
+                </div>
+            </div>
+
+
+<!-- COULEURS -->
+
+            <div class="box" id="couleurs">
+                <div class="info_couleurs">
+                    <h3 class="titre_couleurs">Choissisez les couleurs de votre marque !</h3>
+                </div>
+            </div>
+
+
+<!-- POLICE -->
+
+            <div class="box" id="police">
+                <div class="info_police">
+                    <h3 class="titre_police">Importez votre police !</h3>
+                </div>
+            </div>
+
+
+<!-- IMAGE -->
+
+            <div class="box" id="image">
+                <div class="info_image">
+                    <h3 class="titre_image">Importez vos images !</h3>
+                    <br>
+             <div class="preview-img">
+                <img src="./img/image-placeholder.svg" alt="preview-img">
+            </div>
+            <br>
+        <div class="controls">
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Déposer votre image</button>
+            </div>
+        </div>
+
+    </div>
     </div>
 
+<!-- PREVISUALISATION -->
 
 
+            <div class="box-container_2">  
+                <div class="box active_1" id="box_générateur">
+                    <div class="visualisation1" id="visualisation-container">
+                      <div class="modèle-choisi"></div>
+                      <div class="format-choisi"></div>
+                    </div>
+                </div>    
+
+                <div class="box_download" id="download">
+                    <div class="info_download"> 
+                        <h4 class="titre_box_download">Vous avez fini ?</h4>
+                            <p id="texte_button">Maintenant vous pouvez l'exporter pour l'utiliser sur vos réseaux sociaux. 
+                           <br> Cliquez sur le bouton de droite pour le télécharger en tant qu'image.</p>
+                    </div>
+                    <button class="button_download"><img src="./img/download.svg" class="icon" alt="icon" width="18px">Télécharger !</img></button> 
+                </div>
+              
+            </div>
+
+        
+    </div>
+    
+    
     <script src="./js/index.js"></script>
-  </body>
-
-  <button class="button-générer">Générer un nouvelle modèle</button>
-  
-
-
+          
+    </body>
 </html>

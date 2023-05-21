@@ -1,143 +1,125 @@
 nav {
   text-align: right;
-  font-family: 'Cocogoose', sans-serif;
+  font-family: 'Open Sans SemiBold', sans-serif;
   font-weight: 300;
   font-size: 12px;
+  background-color: #F2F2F2;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 80px 0 rgba(0, 0, 0, 0.19);
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 nav ul {
   list-style: none;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  
+  margin: -5px;    
 }
 
 nav li {
   display: inline-block;
 }
 
-
-p {
-  font-family: 'Cocogoose Light', sans-serif;
-}
 nav a {
-  padding: 25px 40px;
-  margin-right: -4px;
-  font-family: 'Cocogoose', sans-serif;
+  padding: 8px 35px;
+  margin-right: 10px;
   font-weight: 300;
-  font-size: 12px;
   text-decoration: none;
-  color: #000;
-}
-
-nav a.menu:hover {
   background-color: red;
-  color: #fff;
+  border-radius: 8px;
+  color: white;
 }
 
-.logo_menu {
-  float: left;
-  width: 120px;
-}
+  .logo_menu {
+      float: left;
+      width: 120px;
+      padding: 20px 50px;
+      margin-top: 3px;
+      background-color: transparent;
+    }
+    
+    nav li button {
+      border: 1px solid black;
+      color: black;
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 8px 35px;
+      font-family: 'Open Sans SemiBold', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      margin-top: 20px;
+      margin-right: 45px;
 
-nav li button {
-  background-color: black;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 25px 40px;
-  margin-right: 45px;
-  font-family: 'Cocogoose', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-}
+    }
 
-nav li button:hover {
-  background-color: red;
-  color: #fff;
-}
+    nav img {
+      max-width: 80%;
+      height: auto;
+    }
+    
+    
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 75px 100px 0px 100px;
+        font-family: 'Cocogoose Light', sans-serif;
 
-nav img {
-  max-width: 100%;
-  height: auto;
-}
+    }
+    
+      .content {
+        flex: 1;
+      }
+    
+      .image img {
+        width: 430px;
+        margin-top: 45px;
+        height: auto;
+        float: right;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
+    .button_1 {
+      background-color: black;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 15px;
+      padding: 13px 40px;
+      font-family: 'Open Sans SemiBold', sans-serif;
+      font-weight: 300;
+    }
+    
+    .button_2 {
+      border-color: black;
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
+      font-size: 15px;
+      padding: 11px 40px;
+      font-family: 'Open Sans SemiBold', sans-serif;
+      font-weight: 300;
+    }
 
+    .container {
+      font-family: 'Cocogoose', sans-serif;
+      font-weight: 300;
+      font-size: 30px;
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    padding: 20px 105px 0px 105px;
-    left: 0;
-    right: 0;
-}
-
-
-  .content {
-    flex: 1;
-  }
+    }
   
-
-  .image img {
-    width: 415px;
-    height: auto;
-    float: right;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
+    .titre {
+      margin: 50px 40px 30px 0px;
+      font-family: 'Cocogoose Light', sans-serif;
+      font-weight: 300;
+      line-height: 80px;
+    }
   
-  .button_1 {
-    background-color: black;
-    border: none;
-  /*  border-radius: 3px; */
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    padding: 20px 40px;
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 300;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+   
   
-  .button_2 {
-    border-color: black;
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
-    font-size: 15px;
-    padding: 18px 40px;
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 300;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .button_1:hover {
-    background-color: red;
-    color: #fff;
-  }
-
-  .button_2:hover {
-    background-color: red;
-    border-color: red;
-    color: #fff;
-  }
-
-  .container {
-    font-family: 'Cocogoose Pro Light', sans-serif;
-    font-size: 30px;
-  }
-
-  .titre {
-    margin: 50px 40px 30px 0px;
-    line-height: 80px;
-  }
-
-  .img {
-    margin: 50px 0px 0px 0px;
-  }
