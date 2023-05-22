@@ -107,8 +107,6 @@ inputTitre.addEventListener('keyup', function(event) {
 
 
 
-
-
 // Récupérer l'élément input_image
 const inputImage = document.getElementById('input_image');
 
@@ -130,3 +128,133 @@ inputImage.addEventListener('change', function(event) {
 
 });
 
+
+// Récupérer l'élément input_texte
+const inputTexte = document.getElementById('input_texte');
+
+// Ajouter un écouteur d'événements keyup à l'élément input_texte
+inputTexte.addEventListener('keyup', function(event) {
+  // Récupérer la valeur du texte saisi par l'utilisateur
+  const nouveauTexte = event.target.value;
+
+  // Mettre à jour le texte dans la visualisation
+  const texteModele = document.querySelector('.text_modèle1');
+  texteModele.textContent = nouveauTexte;
+
+  showModel();
+});
+
+
+
+
+// Récupérer l'élément input_couleur_titre
+const inputCouleurTitre = document.getElementById('input_couleur_titre');
+
+// Ajouter un écouteur d'événements change à l'élément input_couleur_titre
+inputCouleurTitre.addEventListener('change', function(event) {
+  // Récupérer la valeur de la couleur sélectionnée
+  const nouvelleCouleurTitre = event.target.value;
+
+  // Mettre à jour la couleur des titres dans la visualisation
+  const titresModele = document.querySelectorAll('.titre_modèle1');
+  titresModele.forEach(function(titre) {
+    titre.style.color = nouvelleCouleurTitre;
+  });
+
+  showModel();
+});
+
+// Récupérer l'élément input_couleur_texte
+const inputCouleurTexte = document.getElementById('input_couleur_texte');
+
+// Ajouter un écouteur d'événements change à l'élément input_couleur_texte
+inputCouleurTexte.addEventListener('change', function(event) {
+  // Récupérer la valeur de la couleur sélectionnée
+  const nouvelleCouleurTexte = event.target.value;
+
+  // Mettre à jour la couleur des textes dans la visualisation
+  const textesModele = document.querySelectorAll('.text_modèle1');
+  textesModele.forEach(function(texte) {
+    texte.style.color = nouvelleCouleurTexte;
+  });
+
+  showModel();
+});
+
+// Récupérer l'élément input_couleur_fond
+const inputCouleurFond = document.getElementById('input_couleur_fond');
+
+// Ajouter un écouteur d'événements onchange
+inputCouleurFond.addEventListener('change', function(event) {
+  // Récupérer la valeur de la couleur de fond sélectionnée par l'utilisateur
+  const nouvelleCouleurFond = event.target.value;
+
+  // Mettre à jour la couleur de fond dans la visualisation
+  const modele = document.querySelector('.colonne-contenu');
+  modele.style.backgroundColor = nouvelleCouleurFond;
+
+  showModel();
+});
+
+
+
+
+document.getElementById('btn_importer_police_titres').addEventListener('click', function() {
+  importerPolice('input_police_titres', 'PolicesTitres', '.titre_modèle1');
+});
+
+document.getElementById('btn_importer_police_textes').addEventListener('click', function() {
+  importerPolice('input_police_textes', 'PolicesTextes', '.text_modèle1');
+});
+
+function importerPolice(inputId, policeFamily, classeCSS) {
+  const inputPolice = document.getElementById(inputId);
+  
+  // Vérifier si un fichier de police est sélectionné
+  if (inputPolice.files.length > 0) {
+    const fichierPolice = inputPolice.files[0];
+    const reader = new FileReader();
+    
+    // Lorsque le fichier de police est chargé
+    reader.onload = function() {
+      const stylePolice = document.createElement('style');
+      stylePolice.textContent = `
+        @font-face {
+          font-family: '${policeFamily}';
+          src: url(${reader.result}) format('woff2');
+        }
+      `;
+      
+      // Ajouter le style de police au document
+      document.head.appendChild(stylePolice);
+      
+      // Charger la police avec Web Font Loader
+      const wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.onload = function() {
+        WebFont.load({
+          custom: {
+            families: [policeFamily]
+          },
+          active: function() {
+            // La police est chargée avec succès
+            // Mettre à jour les styles des éléments correspondants
+            const elements = document.querySelectorAll(classeCSS);
+            for (const element of elements) {
+              element.style.fontFamily = `${policeFamily}, sans-serif`;
+            }
+          }
+        });
+      };
+      
+      // Ajouter le script Web Font Loader au document
+      document.head.appendChild(wf);
+    };
+    
+    // Lire le fichier de police en tant que Data URL
+    reader.readAsDataURL(fichierPolice);
+
+    showModel();
+
+  }
+}

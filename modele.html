@@ -76,7 +76,24 @@
             <div class="box" id="couleurs">
                 <div class="info_couleurs">
                     <h3 class="titre_couleurs">Choissisez les couleurs de votre marque !</h3>
-                </div>
+
+                    
+                    <label for="input_couleur_texte">Couleur du texte :</label>
+                    <input type="color" id="input_couleur_texte">  
+
+                    <br>
+
+                    <label for="input_couleur_titre">Couleur du titre :</label>
+                    <input type="color" id="input_couleur_titre">
+
+                    <br>
+
+                    <label for="input_couleur_fond">Couleur de fond :</label>
+                    <input type="color" id="input_couleur_fond">
+
+                
+                           
+                      </div>
             </div>
 
 
@@ -85,23 +102,28 @@
             <div class="box" id="police">
                 <div class="info_police">
                     <h3 class="titre_police">Importez votre police !</h3>
+
+                    <input type="file" id="input_police_titres" accept=".woff, .woff2">
+                    <button id="btn_importer_police_titres">Importer police pour les titres</button>
+                    
+                    <input type="file" id="input_police_textes" accept=".woff, .woff2">
+                    <button id="btn_importer_police_textes">Importer police pour les textes</button>
+                    
                 </div>
             </div>
 
 
 
 <!-- PREVISUALISATION -->
+
+
          <div class="wrapper2">
          <div class="colonne-parametres">
           <!-- Vos champs de saisie d'entrée pour les paramètres -->
-         <h4 class="titre_paramètres">Paramètres</h4>
-
+         <h6 class="titre_paramètres">Paramètres</h6>
          <input type="text" id="input_titre" placeholder="Titre du modèle">
          <input type="text" id="input_texte" placeholder="Texte du modèle">
-
-         <form id="form_image"><input type="file" id="input_image" accept="image/*"></form>
-
-        
+         <input type="file" id="input_image" accept="image/*">
         </div>
     </div>
 

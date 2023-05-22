@@ -382,6 +382,21 @@ div#visualisation-container {
     transform: translateX(190px);
 }
 
-.contenu_modifiable {
-  display: flex;
+
+.text_modèle1{
+  font-weight: 200;
+}
+
+#visualisation-container,#visualisation-container *{
+pointer-events: none;
+}
+
+.titre_modèle1 {
+  font-family: 'PolicesUtilisateur', sans-serif;
+  /* Autres styles de titre */
+}
+
+.text_modèle1 {
+  font-family: 'PolicesUtilisateur', sans-serif;
+  /* Autres styles de texte */
 }
