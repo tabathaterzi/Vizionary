@@ -258,3 +258,5 @@ function importerPolice(inputId, policeFamily, classeCSS) {
 
   }
 }
+
+
