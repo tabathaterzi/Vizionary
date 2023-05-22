@@ -64,7 +64,7 @@ nav a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 75px 100px 0px 100px;
+        padding: 85px 100px 0px 100px;
         font-family: 'Cocogoose Light', sans-serif;
 
     }
@@ -94,6 +94,11 @@ nav a {
       padding: 13px 40px;
       font-family: 'Open Sans SemiBold', sans-serif;
       font-weight: 300;
+      text-decoration: none;
+    }
+
+    .button_1:hover {
+      background-color: red;
     }
     
     .button_2 {

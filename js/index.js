@@ -1,5 +1,4 @@
 
-
 let GlobalModelId = ""
 // Obtén referencias a los elementos del DOM
 const buttons = document.querySelectorAll('.menu-btn');
@@ -63,24 +62,7 @@ function showModel(modelId) {
 }
 
 
-// function showFormat(formatId) {
-  // Obtén una referencia al formato seleccionado
-//  var formatoSeleccionado = document.getElementById(formatId);
-
-  // Elimina cualquier formato clonado previo en el contenedor del formato elegido
-//  while (formatoElegidoContainer.firstChild) {
- //   formatoElegidoContainer.firstChild.remove();
- // }
-
-  // Clona el formato seleccionado y agrega la clase "formato-clonado" para estilizarlo
- // var formatoClonado = formatoSeleccionado.cloneNode(true);
- // formatoClonado.classList.add("formato-clonado");
-
-  // Agrega el formato clonado al contenedor del formato elegido
- // formatoElegidoContainer.appendChild(formatoClonado);
-//} 
-
-
+// Funtion éditeur de contenu / image
 function afficher () {
   var titre = document.getElementById("input_titre").value;
   console.log("Le titre est : " + titre);
@@ -142,8 +124,6 @@ inputTexte.addEventListener('keyup', function(event) {
 
   showModel();
 });
-
-
 
 
 // Récupérer l'élément input_couleur_titre
@@ -257,5 +237,44 @@ function importerPolice(inputId, policeFamily, classeCSS) {
 
   }
 }
+
+
+//Download
+function Screenx(){
+  console.log("pokemon")
+ var canvasPromise = html2canvas(document.querySelector("visualisation_container"), {
+   useCORS: true
+ });
+
+canvasPromise.then((canvas)=>{
+ console.log(canvas)
+ document.body.appendChild(canvas)//Affichage du screenshot dans le body
+
+ var dataURL = canvas.toDataURL("image/png");
+ console.log(dataURL)
+
+ var img = new Image();
+ img.src = dataURL;
+ img.download = dataURL;
+
+// Create a link element
+var a = document.createElement("a");
+a.innerHTML = "DOWNLOAD ton image";
+a.target = "_blank";
+// Set the href of the link to the data URL of the image
+a.href = img.src;
+// Set the download attribute of the link
+a.download = img.document;
+
+document.body.appendChild(a)// Ajout d'un bouton download de l'image
+
+a.click()
+
+})
+
+
+};
+
+document.querySelector(".btn_Telecharger").addEventListener("click",Screenx);
 
 
