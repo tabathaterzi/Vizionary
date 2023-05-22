@@ -102,34 +102,3 @@ function showModel(modelId) {
 
 
 
-document.getElementById("modèle1").addEventListener("keyup", myFunction);
-function myFunction() {
-	var elementValue = document.getElementById("modèle1").value;
-    document.getElementById("titre_modèle1").innerHTML = elementValue;
-}
-
-$(document).ready(function () {
-  $('#modèle1').keyup(function () {
-  $('#titre_modèle1').text($(this).val());
- });
- }); 
-
-
-// Obtener referencia al elemento del título del modelo en el box activo
-const tituloElement = document.querySelector('.box.active_1 .titre_modèle1');
-
-// Obtener referencia al elemento de entrada de texto para cambiar el título
-const inputTituloElement = document.getElementById('myInput');
-
-// Escuchar cambios en el elemento de entrada de texto
-inputTituloElement.addEventListener('input', actualizarTitulo);
-
-// Función para actualizar el título del modelo en el box activo
-function actualizarTitulo() {
-  const nuevoTitulo = inputTituloElement.value;
-
-  // Actualizar el título del modelo en el box activo
-  tituloElement.textContent = nuevoTitulo;
-}
-
-
