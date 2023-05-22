@@ -12,7 +12,7 @@
     <nav>
       <a href="index.html" class="logo_menu"><img src="./img/Vizionary. (1).svg" alt="logo"></a>
       <ul>
-        <li><a href="modele.html" class="menu-modèle">Modèl</a></li>
+        <li><a href="modèl.html" class="menu-modèle">Modèl</a></li>
         <li><button>Login</button></li>
       </ul>
     </nav>
@@ -22,6 +22,7 @@
         <ul class="menu2">
           <li><button class="menu-btn active" data-target="intro"><img src="./img/V..svg" alt="logo" width="28px"></button></li>
           <li><button class="menu-btn" data-target="modèles"><img src="./img/layout-left.svg" alt="logo" width="28px">Modèles</button></li>
+          <li><button class="menu-btn" data-target="paramètres"><img src="./img/new.svg" alt="logo" width="28px">Paramètres</button></li>
           <li><button class="menu-btn" data-target="couleurs"><img src="./img/circle.svg" alt="logo" width="28px">Couleurs</button></li>
           <li><button class="menu-btn" data-target="police"><img src="./img/type.svg" alt="logo" width="28px">Police</button></li>
           <li><button class="menu-btn1" data-target="space"></button></li>
@@ -45,99 +46,131 @@
             </div> 
             
 
+
 <!-- MODELES -->
 
-            <div class="box" id="modèles">
-                <div class="info_modèles">
-                    <h3 class="titre_modèles">Découvrez nos modèles !</h3>
+<div class="box" id="modèles">
+    <div class="info_modèles">
+        <h3 class="titre_modèles">Découvrez nos modèles !</h3>
 
 
-                    <div class="modèles" id="modèle1" onclick="showModel('modèle1')">
+        <div class="modèles" id="modèle1" onclick="showModel('modèle1')">
 
-                        <div class="wrapper">                            
-                            <div class="colonne-contenu">
-                              <!-- Votre contenu de modèle existant -->
-                              <div class="contenu_modèle">
-                              <h1 class="titre_modèle1" id="titre_modele">Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor</h1>
-                              <p class="text_modèle1" id="text_modele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
-                              </div>
-                              <div class="image_contenu">
-                              <img src="./img/49a736c9fb8480701877401495e5c786 1.png" alt="img_du_modèl" class="img_modèl" id="image_modele">
-                            </div>
-                            </div>
-                          </div>
-                          
-
-                      </div>                      
+            <div class="wrapper">                            
+                <div class="colonne-contenu">
+                  <!-- Votre contenu de modèle existant -->
+                  <div class="contenu_modèle">
+                  <h1 class="titre_modèle1" id="titre_modele">Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor</h1>
+                  <p class="text_modèle1" id="text_modele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
+                  </div>
+                  <div class="image_contenu">
+                  <img src="./img/49a736c9fb8480701877401495e5c786 1.png" alt="img_du_modèl" class="img_modèl" id="image_modele">
                 </div>
-            </div>
+                </div>
+              </div>
+              
 
+          </div>                      
+    </div>
+</div>
+
+<!-- PARAMETRES -->
+
+            <div class="box" id="paramètres">
+                 <div class="info_paramètres">
+                      <h3 class="titre_paramètres">A vous de jouer !</h3>
+
+                      <div class="wrapper2">
+                        <div class="colonne-parametres">
+                         <!-- Vos champs de saisie d'entrée pour les paramètres -->
+                        <h6 class="sous-titres_paramètres">Titre du modèle</h6>
+                        <input type="text" id="input_titre" placeholder=" écrivez votre titre">
+
+                        <hr>
+
+                        <h6 class="sous-titres_paramètres">Texte du modèle</h6>
+                        <input type="text" id="input_texte" placeholder=" écrivez votre texte">
+
+                        <hr>
+
+                        <h6 class="sous-titres_paramètres">Choissisez votre image</h6>
+                        <input type="file" id="input_image" accept="image/*">
+                       </div>
+
+                   </div>
+                 </div>
+            </div>
 
 <!-- COULEURS -->
 
-            <div class="box" id="couleurs">
-                <div class="info_couleurs">
-                    <h3 class="titre_couleurs">Choissisez les couleurs de votre marque !</h3>
+                    <div class="box" id="couleurs">
+                      <div class="info_couleurs">
+                         <h3 class="titre_couleurs">Choissisez les couleurs de votre marque !</h3>
 
+
+                    <br>
+                     <h6 class="sous-titres_couleurs">Choissisez la couleur pour votre titre</h6>
+                          <label for="input_couleur_titre"></label>
+                          <input type="color" id="input_couleur_titre">
+
+                     <br>
+                     <hr>
+                     <br>
+                     <br>
+
+
+
+                     <h6 class="sous-titres_couleurs">Choissisez la couleur pour votre texte</h6>
+                         <label for="input_couleur_texte"></label>
+                         <input type="color" id="input_couleur_texte"> 
                     
-                    <label for="input_couleur_texte">Couleur du texte :</label>
-                    <input type="color" id="input_couleur_texte">  
-
+                    <br>
+                    <hr>
+                    <br>
                     <br>
 
-                    <label for="input_couleur_titre">Couleur du titre :</label>
-                    <input type="color" id="input_couleur_titre">
 
-                    <br>
 
-                    <label for="input_couleur_fond">Couleur de fond :</label>
-                    <input type="color" id="input_couleur_fond">
-
-                
-                           
-                      </div>
-            </div>
+                     <h6 class="sous-titres_couleurs">Choissisez la couleur pour votre fond</h6>
+                         <label for="input_couleur_fond"></label>
+                         <input type="color" id="input_couleur_fond">
+               
+                     </div>
+                    </div>
 
 
 <!-- POLICE -->
 
             <div class="box" id="police">
-                <div class="info_police">
+                 <div class="info_police">
                     <h3 class="titre_police">Importez votre police !</h3>
 
-                    <input type="file" id="input_police_titres" accept=".woff, .woff2">
-                    <button id="btn_importer_police_titres">Importer police pour les titres</button>
-                    
-                    <input type="file" id="input_police_textes" accept=".woff, .woff2">
-                    <button id="btn_importer_police_textes">Importer police pour les textes</button>
-                    
-                </div>
-            </div>
+                    <h6 class="sous-titres_police">Importez une police pour votre titre</h6>
 
+                   <input type="file" id="input_police_titres" accept=".woff, .woff2">
+                   <button id="btn_importer_police_titres">Importer</button>
+
+                   <hr>
+
+                   <h6 class="sous-titres_police">Importez une police pour votre texte</h6>
+
+                   <input type="file" id="input_police_textes" accept=".woff, .woff2">
+                   <button id="btn_importer_police_textes">Importer</button>
+        
+                 </div>
+            </div>
 
 
 <!-- PREVISUALISATION -->
 
-
-         <div class="wrapper2">
-         <div class="colonne-parametres">
-          <!-- Vos champs de saisie d'entrée pour les paramètres -->
-         <h6 class="titre_paramètres">Paramètres</h6>
-         <input type="text" id="input_titre" placeholder="Titre du modèle">
-         <input type="text" id="input_texte" placeholder="Texte du modèle">
-         <input type="file" id="input_image" accept="image/*">
-        </div>
-    </div>
-
-         
             <div class="box-container_2">  
                 <div class="box active_1" id="box_générateur">
                     <div class="visualisation1" id="visualisation-container">
                       <div class="modèle-choisi"></div>
                       <div class="format-choisi"></div>
-
                     </div>
                 </div>    
+            </div>
 
                 <div class="box_download" id="download">
                     <div class="info_download"> 
@@ -145,7 +178,9 @@
                             <p id="texte_button">Maintenant vous pouvez l'exporter pour l'utiliser sur vos réseaux sociaux. 
                            <br> Cliquez sur le bouton de droite pour le télécharger en tant qu'image.</p>
                     </div>
-                    <button class="btn_telecharger"><img src="./img/download.svg" class="icon" alt="icon" width="18px">Télécharger !</img></button> 
+                    <button class="btn_Telecharger"><img src="./img/download.svg" class="icon" alt="icon" width="18px">Télécharger</img></button> 
+                    
+                    <a href="modèl.html" class="générer_modèle">Générer un nouveau modèle !</img></button> 
 
                 </div>
               
@@ -154,11 +189,8 @@
         
     </div>
     
-    
-    <script src="./js/index.js"></script>
-    <script src="./js/html2canvas.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./javascript.js"></script>
 
           
     </body>

@@ -105,7 +105,7 @@ ul.menu2 {
   padding-top: 7px;
   background-color: #202020;
   width: 70px;
-  height: 304px;
+  height: 234px;
   font-family: 'Cocogoose Light', sans-serif;
   font-size: 9px;
   color: white;
@@ -145,15 +145,15 @@ ul.menu2 {
   width: 64.15%;
   position: fixed;
   right: 0;
-  height: 425px;
-  transform: translateY(-78px);
+  height: 584px;
+  text-align: center;
+
 }
 
 
 .box-container_2 {
   display: block;
   justify-content: space-between;
-
 }
 
 .box_download {
@@ -183,12 +183,12 @@ h4 {
   font-family: 'Cocogoose', sans-serif;
   font-weight: 300;
   font-size: 9px;
-  margin-right: 200px;
+  margin-right: 40px;
 }
 
 
-.button_download {
-width: 165px;
+.btn_Telecharger {
+width: 125px;
 height: 40px;
 border: 1px solid black;
 background-color: transparent;
@@ -196,7 +196,24 @@ border-radius: 8px;
 margin-top: 15px;
 font-family: 'Open Sans SemiBold', sans-serif;
 font-size: 13px;
+margin-right: 10px;
 }
+
+a.générer_modèle {
+width: 205px;
+height: 28px;
+border: 1px solid black;
+background-color: transparent;
+border-radius: 8px;
+margin-top: 15px;
+font-family: 'Open Sans SemiBold', sans-serif;
+font-size: 13px;
+text-align: center;
+padding-top: 10px;
+text-decoration: none;
+color: black;
+}
+
 
 .icon {
   margin-right: 7px;
@@ -213,6 +230,24 @@ font-size: 13px;
 
 .text_intro {
   font-weight: 200;
+  font-size: 12px;
+}
+
+
+.typo1 {
+  position: absolute;
+  font-family: 'Open Sans Regular' , sans-serif;
+  font-size: 12px;
+  margin-left: 50px;
+}
+
+
+.info_paramètres {
+  padding: 30px 30px;
+  color: white;
+}
+
+.titre_paramètres {
   font-size: 12px;
 }
 
@@ -276,115 +311,55 @@ font-size: 13px;
   display: none;
 }
 
-
-/*.modelo-clonado {
-  margin-top: 20px;
-  width: 56.5%;
-  height: 461.75px;
-}
-
-.img_modèl {
-  width: 170px;
-}
-
-div#visualisation-container {
-  text-align: -webkit-center;
-  scale: 1.6;
-  margin-left: 140px;
-  transform: translateY(55px);
-
-}
-
-.contenido {
-      color: black;
-    text-align: left;
-}
-
-.titre_modèle1 {
-  font-size: 22px;
-  margin-right: 25px;
-}
-
-.text_modèle1 {
-  font-size: 10px;
-  margin-right: 25px;
-  font-weight: 200;
-}
-
- div#modèle1 {
-  scale: 0.6;
-    margin-left: -80px;
-    margin-top: -70px;
-}
-
-div#format {
-  text-align: -webkit-center;
-  scale: 0;
-  margin-left: 0px;
-  transform: translateY(0);
-} */
-
-
 .colonne-contenu {
-    background-color: #D2D2DC;
-    padding-left: 35px;
-    display: flex;
-    align-items: center;
-    scale: 0.6;
-    margin-left: -270px;
-    transform: translateX(300px);
-    margin-top: -60px;
-    width: 405px;
-    height: 405px;
+  background-color: #D2D2DC;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  scale: 0.6;
+  margin-left: -270px;
+  transform: translateX(300px);
+  margin-top: -60px;
+  width: 405px;
+  height: 405px;
+  text-align: left;
 }
 
 div#modèle1 {
-  max-width: 180px;
-  max-height: 800px;
+max-width: 180px;
+max-height: 800px;
 }
 
 img#image_modele {
-  width: 150px;
-  height: 280;
+width: 150px;
+height: 280;
 }
 
 .contenu_modèle {
-  margin-right: 30px;
-  color: black;
+margin-right: 30px;
+color: black;
 
 }
 
 p#texte_modele {
-  font-weight: 200;
-}
-
-.colonne-parametres {
-  background-color: white;
-  border: 1px solid;
-  width: 785px;
-  height: 77px;
-  padding: 1px 0px 0px 35px;
-  color: black;
-  position: fixed;
-  right: 0;
-
-}
-
-.titre_paramètres {
- margin-bottom: 5px;
+font-weight: 200;
 }
 
 div#visualisation-container {
-    width: 40%;
-    text-align: inherit;
-    scale: 1.6;
-    margin-top: 70px;
-    transform: translateX(190px);
+width: 40%;
+text-align: inherit;
+scale: 1.8;
+margin-top: 108px;
+transform: translateX(175px);
+
 }
 
+p#texte_modele {
+font-weight: 200;
+}
 
 .text_modèle1{
-  font-weight: 200;
+font-weight: 200;
 }
 
 #visualisation-container,#visualisation-container *{
@@ -392,11 +367,139 @@ pointer-events: none;
 }
 
 .titre_modèle1 {
-  font-family: 'PolicesUtilisateur', sans-serif;
-  /* Autres styles de titre */
+font-family: 'PolicesUtilisateur', sans-serif;
+/* Autres styles de titre */
 }
 
 .text_modèle1 {
-  font-family: 'PolicesUtilisateur', sans-serif;
-  /* Autres styles de texte */
+font-family: 'PolicesUtilisateur', sans-serif;
+/* Autres styles de texte */
+}
+
+
+input#input_titre {
+border: 1px solid white;
+width: 93%;
+height: 60px;
+margin-bottom: 10px;
+}
+
+input#input_texte {
+border: 1px solid white;
+width: 93%;
+height: 60px;
+margin-bottom: 10px;
+}
+
+.sous-titres_paramètres {
+font-size: 10px;
+margin-bottom: 12px;
+font-weight: 200;
+}
+
+input[type="file" i] {
+border: 1px solid white;
+width: 88%;
+height: 20px;
+margin-bottom: 10px;  
+padding: 10px;
+}
+
+#btn_importer_police_titres {
+background-color: white;
+color: black;
+cursor: pointer;
+padding: 8px 35px;
+border-radius: 5px;
+border: none;
+font-family: 'Open Sans SemiBold', sans-serif;
+font-weight: 300;
+font-size: 12px;
+width: 95%;
+margin-bottom: 30px;
+}
+
+.sous-titres_police {
+font-size: 10px;
+margin-bottom: 10px;
+font-weight: 200;
+}
+
+#input_police_titres {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+cursor: pointer;
+font-family: 'Open Sans SemiBold', sans-serif;
+font-weight: 300;
+font-size: 12px;
+margin-right: 45px;
+margin-top: 10px;
+}
+
+#input_police_textes {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+cursor: pointer;
+font-family: 'Open Sans SemiBold', sans-serif;
+font-weight: 300;
+font-size: 12px;
+margin-right: 45px;
+margin-top: 10px;
+}
+
+hr {
+border: 0.5px solid white; 
+width: 95%;
+margin-left: -1px;
+margin-bottom: 5px;
+}
+
+#btn_importer_police_textes {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 8px 35px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Open Sans SemiBold', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  width: 95%;
+  margin-bottom: 30px;
+}
+
+.sous-titres_couleurs {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  margin-top: -10px;
+}
+
+input#input_couleur_titre {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+input#input_couleur_texte {
+width: 60px;
+height: 60px;
+border: 1px solid white;
+background-color: transparent;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+
+input#input_couleur_fond {
+width: 60px;
+height: 60px;
+border: 1px solid white;
+background-color: transparent;
+margin-top: 10px;
+margin-bottom: 15px;
 }

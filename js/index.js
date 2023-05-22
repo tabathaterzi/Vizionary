@@ -63,23 +63,22 @@ function showModel(modelId) {
 }
 
 
-function showFormat(formatId) {
+// function showFormat(formatId) {
   // Obtén una referencia al formato seleccionado
-  var formatoSeleccionado = document.getElementById(formatId);
+//  var formatoSeleccionado = document.getElementById(formatId);
 
   // Elimina cualquier formato clonado previo en el contenedor del formato elegido
-  while (formatoElegidoContainer.firstChild) {
-    formatoElegidoContainer.firstChild.remove();
-  }
+//  while (formatoElegidoContainer.firstChild) {
+ //   formatoElegidoContainer.firstChild.remove();
+ // }
 
   // Clona el formato seleccionado y agrega la clase "formato-clonado" para estilizarlo
-  var formatoClonado = formatoSeleccionado.cloneNode(true);
-  formatoClonado.classList.add("formato-clonado");
+ // var formatoClonado = formatoSeleccionado.cloneNode(true);
+ // formatoClonado.classList.add("formato-clonado");
 
   // Agrega el formato clonado al contenedor del formato elegido
-  formatoElegidoContainer.appendChild(formatoClonado);
-}
-
+ // formatoElegidoContainer.appendChild(formatoClonado);
+//} 
 
 
 function afficher () {
