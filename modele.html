@@ -19,11 +19,9 @@
     <div class="wrapper">
         <ul class="menu2">
           <li><button class="menu-btn active" data-target="intro"><img src="./img/V..svg" alt="logo" width="28px"></button></li>
-          <li><button class="menu-btn" data-target="formats"><img src="./img/rectangle.svg" alt="logo" width="28px">Format</button></li>
           <li><button class="menu-btn" data-target="modèles"><img src="./img/layout-left.svg" alt="logo" width="28px">Modèles</button></li>
           <li><button class="menu-btn" data-target="couleurs"><img src="./img/circle.svg" alt="logo" width="28px">Couleurs</button></li>
           <li><button class="menu-btn" data-target="police"><img src="./img/type.svg" alt="logo" width="28px">Police</button></li>
-          <li><button class="menu-btn" data-target="image"><img src="./img/image.svg" alt="logo" width="28px">Image</button></li>
           <li><button class="menu-btn1" data-target="space"></button></li>
 
         </ul>
@@ -44,32 +42,30 @@
                 </div>
             </div> 
             
-<!-- FORMATS -->
-
-         <div class="box" id="formats">
-                <div class="info_formats">
-                    <h3 class="titre_formats">Découvrez notre format !</h3>
-                </div>
-            </div>
-
 
 <!-- MODELES -->
 
             <div class="box" id="modèles">
                 <div class="info_modèles">
                     <h3 class="titre_modèles">Découvrez nos modèles !</h3>
-                    <div class="modèles" id="modèle1" onclick="showModel('modèle1')">
-                        <div class="contenido">
-                            <input type="text" id="input_titre" name="titre_1">
-                            <h1 class="titre_modèle1" id="titre_modele">Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor</h1>
-                            
-                            <input type="text" id="input_texte" name="text1">
-                            <p class="text_modèle1" id="texte_modele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>                            
-                          </div>
-                            <input type="text" id="input_image" name="image1">
-                            <img src="./img/49a736c9fb8480701877401495e5c786 1.png" alt="img_du_modèl" class="img_modèl" id="image_modele">
 
+
+                    <div class="modèles" id="modèle1" onclick="showModel('modèle1')">
+
+                        <div class="wrapper">                            
+                            <div class="colonne-contenu">
+                              <!-- Votre contenu de modèle existant -->
+                              <div class="contenu_modèle">
+                              <h1 class="titre_modèle1" id="titre_modele">Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor</h1>
+                              <p class="text_modèle1" id="text_modele">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
+                              </div>
+                              <div class="image_contenu">
+                              <img src="./img/49a736c9fb8480701877401495e5c786 1.png" alt="img_du_modèl" class="img_modèl" id="image_modele">
+                            </div>
+                            </div>
                           </div>
+                          
+
                       </div>                      
                 </div>
             </div>
@@ -93,29 +89,23 @@
             </div>
 
 
-<!-- IMAGE -->
-
-            <div class="box" id="image">
-                <div class="info_image">
-                    <h3 class="titre_image">Importez vos images !</h3>
-                    <br>
-             <div class="preview-img">
-                <img src="./img/image-placeholder.svg" alt="preview-img">
-            </div>
-            <br>
-        <div class="controls">
-            <div class="row">
-                <input type="file" class="file-input" accept="image/*" hidden>
-                <button class="choose-img">Déposer votre image</button>
-            </div>
-        </div>
-
-    </div>
-    </div>
 
 <!-- PREVISUALISATION -->
+         <div class="wrapper2">
+         <div class="colonne-parametres">
+          <!-- Vos champs de saisie d'entrée pour les paramètres -->
+         <h4 class="titre_paramètres">Paramètres</h4>
 
+         <input type="text" id="input_titre" placeholder="Titre du modèle">
+         <input type="text" id="input_texte" placeholder="Texte du modèle">
 
+         <form id="form_image"><input type="file" id="input_image" accept="image/*"></form>
+
+        
+        </div>
+    </div>
+
+         
             <div class="box-container_2">  
                 <div class="box active_1" id="box_générateur">
                     <div class="visualisation1" id="visualisation-container">
