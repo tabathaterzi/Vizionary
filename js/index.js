@@ -241,8 +241,7 @@ function importerPolice(inputId, policeFamily, classeCSS) {
 
 //Download
 function Screenx(){
-  console.log("pokemon")
- var canvasPromise = html2canvas(document.querySelector("visualisation_container"), {
+ var canvasPromise = html2canvas(document.querySelector(".modelo-clonado .wrapper .colonne-contenu"), {
    useCORS: true
  });
 
