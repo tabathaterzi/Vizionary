@@ -28,11 +28,7 @@ buttons.forEach((button) => {
   });
 });
 
-
-
-
-
-
+//----------------------------------------------------------------------------------------------------//
 
 
 // Función para mostrar un modelo seleccionado
@@ -61,8 +57,10 @@ function showModel(modelId) {
   formatoElegidoContainer.appendChild(modeloClonado);
 }
 
+//-------------------------------------------------------------------------------------------------------//
 
-// Funtion éditeur de contenu / image
+// Funtion éditeur de contenu / titre
+
 function afficher () {
   var titre = document.getElementById("input_titre").value;
   console.log("Le titre est : " + titre);
@@ -85,7 +83,7 @@ inputTitre.addEventListener('keyup', function(event) {
 });
 
 
-
+//--------------------------------------------------------------------------------------------------//
 
 
 // Récupérer l'élément input_image
@@ -110,6 +108,8 @@ inputImage.addEventListener('change', function(event) {
 });
 
 
+//----------------------------------------------------------------------------------------------------//
+
 // Récupérer l'élément input_texte
 const inputTexte = document.getElementById('input_texte');
 
@@ -125,6 +125,8 @@ inputTexte.addEventListener('keyup', function(event) {
   showModel();
 });
 
+
+//---------------------------------------------------------------------------------------------------//
 
 // Récupérer l'élément input_couleur_titre
 const inputCouleurTitre = document.getElementById('input_couleur_titre');
@@ -143,6 +145,10 @@ inputCouleurTitre.addEventListener('change', function(event) {
   showModel();
 });
 
+
+//---------------------------------------------------------------------------------------------------//
+
+
 // Récupérer l'élément input_couleur_texte
 const inputCouleurTexte = document.getElementById('input_couleur_texte');
 
@@ -160,6 +166,9 @@ inputCouleurTexte.addEventListener('change', function(event) {
   showModel();
 });
 
+
+//-------------------------------------------------------------------------------------------------//
+
 // Récupérer l'élément input_couleur_fond
 const inputCouleurFond = document.getElementById('input_couleur_fond');
 
@@ -176,6 +185,7 @@ inputCouleurFond.addEventListener('change', function(event) {
 });
 
 
+//--------------------------------------------------------------------------------------------------//
 
 
 document.getElementById('btn_importer_police_titres').addEventListener('click', function() {
@@ -238,8 +248,9 @@ function importerPolice(inputId, policeFamily, classeCSS) {
   }
 }
 
+//-----------------------------------------------------------------------------------------------------//
 
-//Download
+//Download//
 function Screenx(){
  var canvasPromise = html2canvas(document.querySelector(".modelo-clonado .wrapper .colonne-contenu"), {
    useCORS: true
